@@ -12,7 +12,7 @@ from pathlib import Path
 from datetime import datetime
 
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 
 def get_python_executable():

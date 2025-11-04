@@ -26,6 +26,11 @@ cd space-chef-save-manager
 build.bat   # Windows
 ```
 
+**Default Save Locations:**
+- Windows: `C:\Users\<YourName>\AppData\LocalLow\BlueGooGames\Space Chef\Saves`
+- macOS: `~/Library/Application Support/BlueGooGames/Space Chef/Saves`
+- Linux: `~/.local/share/BlueGooGames/Space Chef/Saves`
+
 **Documentation:**
 - [User Guide](space-chef-save-manager/README.md)
 - [Build Instructions](space-chef-save-manager/BUILD_INSTRUCTIONS.md)

@@ -79,8 +79,10 @@ python main.py
 
 ### Default Save Locations
 
-- **Windows**: `%AppData%\BlueGooGames\Space Chef\Saves`
-  - Usually: `C:\Users\<YourName>\AppData\Roaming\BlueGooGames\Space Chef\Saves`
+- **Windows**: `%USERPROFILE%\AppData\LocalLow\BlueGooGames\Space Chef\Saves`
+  - Usually: `C:\Users\<YourName>\AppData\LocalLow\BlueGooGames\Space Chef\Saves`
+  - Alternative: `C:\Users\<YourName>\AppData\Roaming\BlueGooGames\Space Chef\Saves`
+  - The tool automatically detects which location has your saves
 
 - **macOS**: `~/Library/Application Support/BlueGooGames/Space Chef/Saves`
 
