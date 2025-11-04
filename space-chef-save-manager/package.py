@@ -22,14 +22,19 @@ def create_readme_txt():
         instructions = """
 How to Run:
   1. Double-click SpaceChefSaveManager.exe
-  2. No installation required!
+  2. If Windows Defender SmartScreen shows a warning:
+     - Click "More info"
+     - Click "Run anyway"
+     (This warning appears because the app is not digitally signed)
+  3. No installation required!
 
 Default Save Location:
-  C:\\Users\\<YourName>\\AppData\\Roaming\\BlueGooGames\\Space Chef\\Saves
+  C:\\Users\\<YourName>\\AppData\\LocalLow\\BlueGooGames\\Space Chef\\Saves
 
 If the save location is not found automatically:
   - Click "Browse..." to locate your Saves folder
   - Make sure Space Chef has been run at least once
+  - The tool checks both LocalLow and Roaming AppData locations
 """
     elif system == "Darwin":
         executable = "SpaceChefSaveManager"
@@ -90,6 +95,10 @@ Usage:
   5. Use "Open Save Folder" or "Open Player Logs" for quick access
 
 Troubleshooting:
+  - Windows Defender SmartScreen warning? (Windows only)
+    This is normal for unsigned applications. Click "More info" then "Run anyway"
+    Your antivirus may also flag it - this is a false positive for PyInstaller apps
+
   - Save location not found?
     Use the "Browse..." button to manually select your Saves folder
 
